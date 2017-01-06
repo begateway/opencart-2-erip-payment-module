@@ -1,4 +1,4 @@
-<div id="instruction" class="pull-left"></div>
+<p id="instruction" class="pull-left"></p>
 <div class="buttons" id="checkout-success">
   <div class="pull-right">
     <input type="button" value="<?php echo $button_confirm; ?>" data-loading-text="<?php echo $text_loading; ?>" id="button-confirm" class="btn btn-primary" />
@@ -38,4 +38,10 @@ var ajax_handler = function() {
 }
 
 jQuery('#button-confirm').bind('click', ajax_handler);
+
+// simple checkout hack
+if (jQuery('#payment-form').length > 0) {
+  jQuery('#payment-form').css('display', 'block');
+  jQuery('#button-confirm').click();
+}
 //--></script>
