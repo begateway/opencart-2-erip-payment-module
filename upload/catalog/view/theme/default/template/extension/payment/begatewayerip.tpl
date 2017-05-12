@@ -8,7 +8,7 @@
 
 var ajax_handler = function() {
 	jQuery.ajax({
-		url: 'index.php?route=payment/begatewayerip/send',
+		url: 'index.php?route=extension/payment/begatewayerip/send',
 		type: 'post',
     dataType: 'json',
     cache: false,

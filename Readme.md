@@ -1,5 +1,8 @@
 ## Модуль оплаты через систему Расчёт (ЕРИП) для OpenCart 2
 
+  * Перейдите по [ссылке](https://github.com/beGateway/opencart-payment-module/tree/opencart-2.0) если вам нужна версия модуля для OpenCart 2.0.x
+  * Перейдите по [ссылке](https://github.com/beGateway/opencart-payment-module/tree/opencart-2.2) если вам нужна версия модуля для OpenCart 2.2.x
+
 Данный модуль обеспечивает информационное взаимодействие между вашим интернет-магазином, системой Расчёт (ЕРИП) и сервисом платежей [bePaid.by](https://bepaid.by)
 
 ### Установка
@@ -30,7 +33,7 @@ RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization},L]
 
 ### Примечания
 
-Разработано и протестировано с OpenCart v.2.0.1.1
+Разработано и протестировано с OpenCart v.2.3.0.2
 
 Требуется PHP 5+
 

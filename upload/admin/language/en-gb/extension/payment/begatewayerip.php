@@ -4,7 +4,7 @@ $_['heading_title']          = 'ERIP';
 $_['text_edit']              = 'Edit configuration';
 
 // Text
-$_['text_payment']        = 'Payment';
+$_['text_extension']        = 'Extensions';
 $_['text_success']        = 'Success: You have modified payment module!';
 $_['text_begatewayerip']  = '<img src="view/image/payment/raschet.png" alt="ERIP" title="ERIP" style="border: 1px solid #EEEEEE;" />';
 

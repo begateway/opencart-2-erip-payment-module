@@ -4,7 +4,7 @@ $_['heading_title']          = 'Расчёт (ЕРИП)';
 $_['text_edit']              = 'Изменить настройки';
 
 // Text
-$_['text_payment']        = 'Оплата';
+$_['text_extension']        = 'Расширения';
 $_['text_success']        = 'Вы успешно изменили настройки модуля';
 $_['text_begatewayerip']  = '<img src="view/image/payment/raschet.png" alt="Расчёт (ЕРИП)" title="Расчёт (ЕРИП)" style="border: 1px solid #EEEEEE;" />';
 

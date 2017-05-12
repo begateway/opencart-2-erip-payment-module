@@ -1,22 +1,22 @@
 <?php
-class ControllerPaymentBegatewayErip extends Controller {
+class ControllerExtensionPaymentBegatewayErip extends Controller {
 
   public function index() {
-    $this->language->load('payment/begatewayerip');
+    $this->language->load('extension/payment/begatewayerip');
     $this->load->model('checkout/order');
     $data['text_wait'] = $this->language->get('text_wait');
     $data['text_loading'] = $this->language->get('text_loading');
     $data['button_confirm'] = $this->language->get('button_confirm');
 
-    if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/payment/begatewayerip.tpl')) {
-      return $this->load->view($this->config->get('config_template') . '/template/payment/begatewayerip.tpl', $data);
+    if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . 'extension/payment/begatewayerip.tpl')) {
+      return $this->load->view($this->config->get('config_template') . 'extension/payment/begatewayerip.tpl', $data);
     } else {
-      return $this->load->view('default/template/payment/begatewayerip.tpl', $data);
+      return $this->load->view('extension/payment/begatewayerip.tpl', $data);
     }
   }
 
   public function send() {
-    $this->language->load('payment/begatewayerip');
+    $this->language->load('extension/payment/begatewayerip');
 
     $json = array();
     $json['text_thankyou'] = $this->language->get('text_thankyou');
@@ -48,7 +48,7 @@ class ControllerPaymentBegatewayErip extends Controller {
     $orderAmount = $this->currency->format($order_info['total'], $order_info['currency_code'], $order_info['currency_value'], false);
     $orderAmount = (float)$orderAmount * pow(10,(int)$this->currency->getDecimalPlace($order_info['currency_code']));
     $orderAmount = intval(strval($orderAmount));
-    $callback_url = $this->url->link('payment/begatewayerip/callback', '', 'SSL');
+    $callback_url = $this->url->link('extension/payment/begatewayerip/callback', '', 'SSL');
     $callback_url = str_replace('carts.local', 'webhook.begateway.com:8443', $callback_url);
     $description = sprintf($this->language->get('text_service_info'), $order_info['order_id']);
 
@@ -126,7 +126,7 @@ class ControllerPaymentBegatewayErip extends Controller {
 
   public function callback() {
 
-    $this->language->load('payment/begatewayerip');
+    $this->language->load('extension/payment/begatewayerip');
 
     $postData =  (string)file_get_contents("php://input");
 
