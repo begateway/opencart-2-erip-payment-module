@@ -5,7 +5,7 @@
 ### Установка
 
 * Создайте резервную копию вашего магазина и базы данных
-* Загрузите файл модуля [opencart-erip-payment-module.ocmod.zip](https://github.com/beGateway/opencart-2-erip-payment-module/raw/master/opencart-erip-payment-module.ocmod.zip) с помощью _Модули_ -> _Установка расширений_
+* Загрузите файл модуля [opencart-erip-payment-module.ocmod.zip](https://github.com/beGateway/opencart-2-erip-payment-module/raw/opencart-2.0/opencart-erip-payment-module.ocmod.zip) с помощью _Модули_ -> _Установка расширений_
 * Загрузите содержимое архива в вашу установленную копию OpenCart
 * Задайте в настройках модуля Расчёт (ЕРИП):
   * Id магазина
