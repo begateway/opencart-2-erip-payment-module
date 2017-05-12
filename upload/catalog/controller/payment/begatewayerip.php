@@ -8,10 +8,10 @@ class ControllerPaymentBegatewayErip extends Controller {
     $data['text_loading'] = $this->language->get('text_loading');
     $data['button_confirm'] = $this->language->get('button_confirm');
 
-    if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/payment/begatewayerip.tpl')) {
-      return $this->load->view($this->config->get('config_template') . '/template/payment/begatewayerip.tpl', $data);
+    if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . 'payment/begatewayerip.tpl')) {
+      return $this->load->view($this->config->get('config_template') . 'payment/begatewayerip.tpl', $data);
     } else {
-      return $this->load->view('default/template/payment/begatewayerip.tpl', $data);
+      return $this->load->view('payment/begatewayerip.tpl', $data);
     }
   }
 

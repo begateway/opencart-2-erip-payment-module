@@ -5,7 +5,7 @@
 ### Установка
 
 * Создайте резервную копию вашего магазина и базы данных
-* Загрузите файл модуля [opencart-erip-payment-module.ocmod.zip](https://github.com/beGateway/opencart-2-erip-payment-module/raw/master/opencart-erip-payment-module.ocmod.zip) с помощью _Модули_ -> _Установка расширений_
+* Загрузите файл модуля [opencart-erip-payment-module.ocmod.zip](https://github.com/beGateway/opencart-2-erip-payment-module/raw/opencart-2.2/opencart-erip-payment-module.ocmod.zip) с помощью _Модули_ -> _Установка расширений_
 * Загрузите содержимое архива в вашу установленную копию OpenCart
 * Задайте в настройках модуля Расчёт (ЕРИП):
   * Id магазина
@@ -30,7 +30,7 @@ RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization},L]
 
 ### Примечания
 
-Разработано и протестировано с OpenCart v.2.0.1.1
+Разработано и протестировано с OpenCart v.2.2.0.0
 
 Требуется PHP 5+
 
