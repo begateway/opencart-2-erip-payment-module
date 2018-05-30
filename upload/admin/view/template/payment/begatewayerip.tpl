@@ -78,7 +78,7 @@
           <div class="form-group">
             <label class="col-sm-2 control-label" for="input-geo-zone"><?php echo $entry_geo_zone; ?></label>
             <div class="col-sm-10">
-              <select name="begateway_geo_zone_id" id="input-geo-zone" class="form-control">
+              <select name="begatewayerip_geo_zone_id" id="input-geo-zone" class="form-control">
                 <option value="0"><?php echo $text_all_zones; ?></option>
                 <?php foreach ($geo_zones as $geo_zone) { ?>
                 <?php if ($geo_zone['geo_zone_id'] == $begatewayerip_geo_zone_id) { ?>
